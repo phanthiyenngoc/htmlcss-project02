@@ -1,0 +1,651 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* common */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 11px 41px;
+  height: 50px;
+  min-width: 144px;
+  background: #171100;
+  border-radius: 24.5px;
+}
+
+/* Header */
+.content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  padding-top: 36px;
+  background: #fffcf4;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .nav-list {
+  display: flex;
+}
+.header .nav-list .link {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+}
+
+.header .nav-list .link:hover {
+  color: #171100;
+}
+
+.header .nav-list .nav-item .link::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 15px;
+  height: 3px;
+  border-radius: 10px;
+  transition: width 0.5s linear, opacity 0.5s linear;
+}
+
+.header .nav-list .nav-item {
+  position: relative;
+}
+.header .nav-list .nav-item .link:hover::after {
+  width: 30%;
+  background-color: #171100;
+}
+
+.header .nav-list .nav-item + .nav-item {
+  margin-left: 42px;
+}
+
+.header .nav-list .nav-item + .nav-btn {
+  margin-left: 70px;
+}
+
+.header .nav-list .btn {
+  color: #ffffff;
+}
+
+.header .nav-list .btn:hover {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* hero */
+.hero {
+  gap: 230px;
+}
+.hero .img-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.hero .hero-img {
+  width: 470px;
+
+  object-fit: cover;
+  margin-top: 150px;
+  margin-bottom: 64px;
+  border-radius: 20px;
+}
+
+.hero .info-group {
+  width: 470px;
+
+  margin: 128px 0;
+}
+
+.hero .info-group .sub-title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+
+.hero .info-group .desc {
+  margin-top: 22px;
+  margin-bottom: 38px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+}
+
+.hero-action {
+  display: flex;
+}
+
+.btn-hero-action {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #ffffff;
+  background: #ffb900;
+  border-radius: 32px;
+  min-width: 180px;
+}
+
+.btn-hero-action:hover {
+  opacity: 0.9;
+}
+
+.btn-hero-no-action {
+  display: inline-block;
+  text-align: center;
+  padding: 11px 0;
+  background-color: transparent;
+  color: #171100;
+  min-width: 110px;
+ 
+}
+
+.desc-hero-action {
+  margin-top: 48px;
+  margin-bottom: 8px;
+}
+
+.img-quanlity {
+  margin-right: 28px;
+}
+/* Courses */
+.courses {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  width: 270px;
+  padding: 24px;
+  position: absolute;
+  top: 55%;
+  left: 300px;
+}
+
+.courses-group {
+  display: flex;
+}
+
+.img-courses {
+  margin-right: 16px;
+  margin-bottom: 22px;
+}
+
+.info-courses .price {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+
+.info-courses .price-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #171100;
+}
+/* popular */
+#popular {
+  margin: 200px 0;
+}
+
+#popular .sub-title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.26;
+
+  color: #171100;
+}
+
+#popular .course {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#popular .course .img-course-design {
+  margin-bottom: 16px;
+  width: 370px;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+
+#popular .popular-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-1-right span {
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  color: #fea31b;
+}
+.courses-design {
+  margin-top: 55px;
+
+  background: #ffffff;
+  border: 1px solid #e2dfda;
+  border-radius: 12px;
+}
+.course-design-row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px 6px;
+}
+
+.course .sub-title-h3 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+
+  color: #171100;
+}
+
+.courses-design .desc {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+
+  color: #5f5b53;
+  margin: 6px 22px 12px 22px;
+}
+.price {
+  margin: 0 22px 22px;
+}
+.span-price {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+
+  color: #171100;
+  margin-right: 141px;
+}
+
+.row-1-right {
+  display: flex;
+  align-items: center;
+}
+.img-star {
+  margin-right: 6px;
+}
+.btn-popurlar {
+  min-width: 118px;
+  background: #171100;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn-popurlar:hover {
+  background: #ffb900;
+  color: #ffffff;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+/* Feedback */
+
+.feedback {
+  background: #2e2100;
+  padding: 96px 0;
+}
+
+.feedback-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-info .desc-name {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.42;
+  color: #f7f7f7;
+  margin-top: 18px;
+  margin-bottom: 4px;
+}
+
+.feedback-info .desc-specialized {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb3;
+}
+.feedback-desc {
+  width: 770px;
+  min-height: 188px;
+}
+
+.feedback-desc .img-icon-apostrophe {
+  width: 30px;
+  height: 38px;
+  margin-left: -30px;
+}
+
+.desc-feedback {
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.54;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-style: italic;
+}
+/* pricing */
+.pricing {
+  margin: 200px 0;
+}
+.pricing-group {
+  display: flex;
+  gap: 130px;
+}
+.pricing .img-group {
+  display: flex;
+  width: 570px;
+}
+
+.pricing .img-pricing {
+  width: 270px;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.img-pricing-frist {
+  padding-top: 34px;
+  margin-right: 30px;
+}
+
+.img-pricing-second {
+  padding-bottom: 33px;
+}
+
+.info-pricing {
+  max-width: 470px;
+}
+
+.info-pricing .sub-title {
+  padding-top: 58px;
+  padding-bottom: 16px;
+  font-family: "Sen";
+
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 1.26;
+  color: #171100;
+}
+
+.info-pricing .desc {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+}
+.info-pricing .time {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+}
+.btn-pricing {
+  min-width: 137px;
+  color: #ffffff;
+  background: #ffb900;
+  border-radius: 26px;
+  padding: 11px 37px;
+}
+
+.btn-pricing:hover {
+  opacity: 0.9;
+}
+/* Review */
+.reviews {
+  margin: 200px;
+}
+.review-group {
+  display: flex;
+}
+
+.info-review {
+  width: 570px;
+  margin-right: 130px;
+}
+
+.review-group .info-review .sub-title {
+  padding-top: 67px;
+  padding-bottom: 16px;
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.26;
+  letter-spacing: -0.02em;
+  color: #171100;
+}
+
+.review-group .info-review .desc {
+  padding-bottom: 50px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #5f5b53;
+}
+.btn-review {
+  min-width: 137px;
+  color: #ffffff;
+  background: #ffb900;
+  border-radius: 26px;
+  padding: 12px 31px;
+}
+.img-review {
+  width: 470px;
+}
+.img-review-one {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+/* Our-blog */
+.our-blog {
+  background: #fffcf4;
+  padding-top: 96px;
+}
+.info-our-blog {
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border-radius: 0 0 16px 16px;
+}
+.our-blog-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-blog .row-1 {
+  text-align: center;
+  width: 448px;
+}
+
+.our-blog .sub-title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.26;
+  letter-spacing: -0.02em;
+  color: #130606;
+}
+
+.our-blog .desc {
+  margin-top: 16px;
+  margin-bottom: 55px;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #696262;
+}
+.our-blog .row-2 {
+  display: flex;
+  gap: 30px;
+}
+.our-log-group {
+  width: 370px;
+}
+.img-our-blog {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.our-log-group .time {
+  display: flex;
+  margin-left: 20px;
+}
+
+.our-log-group .time .img-icon {
+  margin-right: 4px;
+}
+
+.full-time {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+.our-blog-group .hr {
+  margin: 0 20px;
+  width: 160px;
+  height: 1px;
+  background: #e2dfda;
+  border-radius: 0.5px;
+}
+.our-blog-group .desc {
+  margin: 12px 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #171100;
+}
+
+.btn-our-blog {
+  display: inline-block;
+  background: #171100;
+  border-radius: 25px;
+  color: #ffffff;
+  padding: 12px 21px;
+  min-width: 118px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.btn-our-blog:hover {
+  opacity: 0.9;
+  background: #ffb900;
+  border-radius: 25px;
+  color: #ffffff;
+}
+.row-3 {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  margin-bottom: 96px;
+}
+/* .footer */
+.footer {
+  padding-top: 96px;
+  padding-bottom: 28px;
+  background: #2e2100;
+}
+
+.footer-row-1 {
+  display: flex;
+  gap: 130px;
+}
+.info-footer-logo {
+  width: 267px;
+  margin-right: 15px;
+}
+
+.info-footer .item {
+  margin: 18px 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #bfbcb2;
+}
+
+.info-footer-address {
+  width: 231px;
+}
+
+.info-footer .sub-title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+
+  color: #ffffff;
+}
+
+.group-link .icon + .icon {
+  margin-left: 18px;
+}
+.info-footer .hr {
+  margin-top: 14px;
+  margin-bottom: 28px;
+  width: 130px;
+  height: 1px;
+  background: #59554b;
+}
+
+.hr-footer {
+  width: 1170px;
+  height: 1px;
+  background: #59554b;
+  margin-top: 38px;
+  margin-bottom: 28px;
+}
+
+.row-footer-3 .desc {
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #807d74;
+}
